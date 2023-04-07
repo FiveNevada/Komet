@@ -1,0 +1,207 @@
+<?php
+
+session_start();
+
+if(!isset($_SESSION['usuario'])){
+    echo '
+        <script>
+            alert("Antes debes de iniciar sesión para ingresar");
+            window.location = "Login.php";
+        </script>
+    ';
+    session_destroy();
+    die();
+}
+?>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bf924a6af6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/PaginaPrincipal.css">
+    <link rel="stylesheet" type="text/css" href="CSS/Encabezado.css">
+    <link rel="stylesheet" type="text/css" href="CSS/PieDePagina.css">
+    <link rel="stylesheet" type="text/css" href="CSS/MenuDesplegable.css">
+    <link rel="stylesheet" type="text/css" href="CSS/ParteCentral.css">
+    <title>Komet - Inicio</title>
+</head>
+<body>
+    <header>
+        <div class="Encabezado">
+            <div class="Logotipo1"><a href="#"><img src="Images/Screenshot 2023-03-15 110810.png"></a></div>
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Perfil</a>
+                <a href="PHP/CerrarSesion.php">Salir</a> 
+
+            </nav>
+
+        </div>
+    </header>
+    <main>
+        <div class="menu">
+            <div class="contenido">
+                <nav>
+                    <ul>
+                        <li><a href="">Videojuegos</a>
+                            <ul>
+                                <li><a href="">Acción</a></li>
+                                <li><a href="">Aventura</a></li>
+                                <li><a href="">RPG</a></li>
+                                <li><a href="">Terror</a></li>
+                                <li><a href="">Deportes</a></li>
+                                <li><a href="">Simulación</a></li>
+                                <li><a href="">Ofertas</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">PlayStation 5</a>
+                            <ul>
+                                <li><a href="">Consolas</a></li>
+                                <li><a href="">Dispositivos (Controles, memorias..)</a></li>
+                                <li><a href="">Videojuegos</a></li>
+                                <li><a href="">Ofertas</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Xbox Series X|S</S></a>
+                            <ul>
+                                <li><a href="">Consolas</a></li>
+                                <li><a href="">Dispositivos (Controles, memorias..)</a></li>
+                                <li><a href="">Videojuegos</a></li>
+                                <li><a href="">Ofertas</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Nintendo Switch</a>
+                            <ul>
+                                <li><a href="">Consolas</a></li>
+                                <li><a href="">Dispositivos (Controles, memorias..)</a></li>
+                                <li><a href="">Videojuegos</a></li>
+                                <li><a href="">Ofertas</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Otras Consolas</a>
+                            <ul>
+                                <li><a href="">PlayStation 4</a></li>
+                                <li><a href="">Xbox 360</a></li>
+                                <li><a href="">PlayStation 3</a></li>
+                                <li><a href="">Wii</a></li>
+                                <li><a href="">PlayStation 2</a></li>
+                                <li><a href="">Clásicos</a></li>
+                                <li><a href="">GameCube</a></li>
+                                <li><a href="">PSP</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Ropa</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <section class="Tendencias">
+            <div class="Imagenes">
+                <a href=""><img src="https://cdn.atomix.vg/wp-content/uploads/2022/11/oferta.jpg" alt="Ofertas Enero - Junio"/></a>
+                <a href=""><img src="https://www.somosxbox.com/wp-content/uploads/2020/06/OfertasXboxJunio2020-1.jpg?width=1200&enable=upscale" alt="Ofertas para Xbox"/></a>
+                <a href=""><img src="https://img.aullidos.com/imagenes/noticias/tw-34308.jpg" alt="Ofertas para PlayStation"/></a>
+                <a href=""><img src="https://s3.amazonaws.com/businessinsider.mx/wp-content/uploads/2021/12/08164547/Comparacio%CC%81n-de-consolas.jpg" alt="Ofertas Consolas"></a>
+            </div>
+        </section>
+        <section class="Ofertas">
+            <div class="Ofertas1">
+                <h2>OFERTAS DEL MES</h2>
+                <div class="Articulo1">
+                    <a href="#"><img src="https://m.media-amazon.com/images/I/81AXuMBqy9L._AC_SL1500_.jpg" alt="Elden Ring"/></a>
+                    <a href="#">Elden Ring</a>
+                    <p class="Consola">Xbox One</p>
+                    <p class="Precios">$ 1,200</p>
+                </div>
+                <div class="Articulo2">
+                    <a href="#"><img src="https://m.media-amazon.com/images/I/71GmP29XuYL._AC_SY500_.jpg" alt="Mario Maker 2"></a>
+                    <a href="#">Mario Maker 2</a>
+                    <p class="Consola">Nintedo Switch</p>
+                    <p class="Precios">$ 1,300</p>
+                </div>
+            </div>
+            <div class="Ofertas2">
+                <div class="Articulo1">
+                    <a href="#"><img src="https://m.media-amazon.com/images/I/51eyzZh8lVL._AC_.jpg" alt="The Legend of Zelda Breath of the Wild"></a>
+                    <a href="#">The Legend of Zelda Breath of the Wild</a>
+                    <p class="Consola">Nintendo Switch</p>
+                    <p class="Precios">$ 1,000</p>
+                </div>
+                <div class="Articulo2">
+                    <a href="#"><img src="https://m.media-amazon.com/images/I/61+s8HfeFoL._AC_.jpg" alt="Grand Theft Auto V"></a>
+                    <a href="#">Grand Theft Auto V</a>
+                    <p class="Consola">PlayStation 4</p>
+                    <p class="Precios">$ 650</p>
+                </div>
+            </div>
+            <div class="Ofertas3">
+                <div class="Articulo1">
+                    <a href="#"><img src="https://m.media-amazon.com/images/I/81AmbNg+ueL._AC_SX679_.jpg" alt="Hogwarts Legacy"></a>
+                    <a href="#">Hogwarts Legacy Estandar Edition</a>
+                    <p class="Consola">PlayStation 5</p>
+                    <p class="Precios">$ 1,700</p>
+                </div>
+                <div class="Articulo2">
+                    <a href="#"><img src="https://yoco.com.mx/wp-content/uploads/2020/08/x-box.png" alt="Sudadera Xbox"></a>
+                    <p class="Nombre">Sudadera Xbox</p>
+                    <p class="Consola">Ropa</p>
+                    <p class="Precios">$ 500</p>
+                </div>
+            </div>
+            <div class="Ofertas4">
+                <div class="Articulo1">
+                    <a href="#"><img src="https://cdn.gameplanet.com/wp-content/uploads/2022/09/03154551/dualsense_white_2.jpg" alt="Control PlayStation 5"></a>
+                    <a href="#">Control PlayStation 5</a>
+                    <p class="Consola">PlayStation</p>
+                    <p class="Precios">$ 1,500</p>
+                </div>
+                <div class="Articulo2">
+                    <a href="#"><img src="https://m.media-amazon.com/images/I/61MGrHUMWzL._AC_SX679_.jpg" alt="Memoria Xbox Series X|S"></a>
+                    <a href="#">Memoria Seagate 1tb</a>
+                    <p class="Consola">Xbox One Series X|S</p>
+                    <p class="Precios">$ 4,000</p>
+                </div>
+            </div>
+            <div class="Paginas">
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="PiedePagina">
+            <div class="Contenido">
+                <div class="Logotipo">
+                    <img src="Images/Screenshot 2023-03-15 110810.png" alt="Logo de la empresa">
+                </div>
+            </div>
+            <div class="Contenido">
+                <h2>Productos</h2>
+                <a href="#">Preventa</a>
+                <a href="#">Estrenos</a>
+                <a href="#">Ofertas</a>
+            </div>
+            <div class="Contenido">
+                <h2>Empresa</h2>
+                <a href="#">Sucursal</a>
+                <a href="#">Facturación</a>
+            </div>
+            <div class="Contenido">
+                <h2>Redes Sociales</h2>
+                <a target="_blank" href="https://www.instagram.com/tecsa_talento/?hl=en"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                <a target="_blank" href="https://www.facebook.com/tecsa.mx/?locale=es_LA"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                <a target="_blank" href="https://www.youtube.com/@tecsacontactcenter"><i class="fa-brands fa-youtube"></i> YouTube</a>
+            </div>
+        </div>
+        <div class="Copyright">
+            <hr>
+            <p>©2023 <b>Komet</b> SA de CV</p>
+        </div>
+    </footer>
+</body>
+</html>

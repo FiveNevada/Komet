@@ -1,0 +1,144 @@
+/*IMAGENES PARTE IZQUIERDA*/
+
+.Tendencias {
+    width: 590px;
+    background: transparent;
+    height: 1200px;
+    position: relative;
+    display: inline-block;
+}
+
+.Imagenes img {
+    width: 500px;
+    height: 250px;
+    display: block;
+    margin-bottom: 60px;
+    margin-left: 45px;
+    border-radius: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+
+.Imagenes img:hover {
+    transform: scale(1.1);
+}
+
+/*VIDEOJUEGOS PARTE DERECHA*/
+
+.Ofertas {
+    width: 610px;
+    height: 1250px;
+    background: transparent;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    top: 20px;
+}
+
+.Ofertas1 {
+    width: 610px;
+    height: 300px;
+    background: transparent;
+}
+
+.Ofertas2 {
+    width: 610px;
+    height: 300px;
+    background: transparent;
+}
+
+.Ofertas3 {
+    width: 610px;
+    height: 300px;
+    background: transparent;
+}
+
+.Articulo1 {
+    width: 250px;
+    height: 260px;
+    background: transparent;
+    border-radius: 30px;
+    position: absolute;
+    left: 7%;
+    margin-top: 4%;
+    text-align: center;
+}
+
+.Articulo1 img {
+    width: 130px;
+    height: 180px;
+    margin: 10px 60px;
+    overflow: hidden;
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+
+.Articulo1 img:hover {
+    transform: scale(1.1);
+}
+
+.Articulo2 img {
+    width: 130px;
+    height: 180px;
+    margin: 10px 60px;
+    overflow: hidden;
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+
+.Articulo2 img:hover {
+    transform: scale(1.1);
+}
+
+.Nombre {
+    white-space: nowrap; 
+    font-weight: bold; 
+}
+
+.Consola {
+    white-space: nowrap; 
+    font-weight: bold; 
+}
+
+.Precios {
+    white-space: nowrap; 
+    font-weight: bold; 
+    color: orangered;
+}
+
+.Articulo2 {
+    width: 250px;
+    height: 260px;
+    background: transparent;
+    position: absolute;
+    left: 56%;
+    margin-top: 4%;
+    text-align: center;
+}
+
+.Paginas {
+    display: flex;
+    justify-content: center;
+    margin-top: 290px;
+
+}
+
+.Paginas a {
+    display: inline-block;
+    padding: 5px 15px;
+    margin: 0 15px;
+    color: #fff;
+    background: transparent;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.5s ease-out;
+
+}
+
+.Paginas a:hover{
+    background: #42208C;
+    border: 1px solid black;
+    transform: translateY(-3px);
+}

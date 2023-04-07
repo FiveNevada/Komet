@@ -1,0 +1,60 @@
+/*PIE DE PAGINA CONTENIDO*/
+
+footer {
+    width: 100%;
+    padding: 50px 0px;
+    background-color: #42208C;
+}
+
+.PiedePagina {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: -30px;
+}
+
+.Contenido {
+    display: flex;
+    flex-direction: column; 
+    padding: 40px;
+}
+
+.Contenido .Logotipo img {
+    width: 200px;
+    height: 60px;
+    margin-top: -10px;
+}
+
+.Contenido h2 {
+    margin-bottom: 5px;
+    margin-top: -25px;
+}
+
+.Contenido a {
+    margin-top: 7px;
+    color: #7a7a7a;
+}
+
+.Contenido a:hover {
+    opacity: 0.8;
+}
+
+.Copyright {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.Copyright p {
+    margin-top: 15px;
+    color: #7a7a7a;
+}
+
+.Copyright hr {
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}

@@ -1,0 +1,48 @@
+/*ENCABEZADO DE PAGINA*/
+
+header {
+    width: 100%;
+    overflow: hidden;
+    background: #0D2840;
+    margin-bottom: 20px;
+    height: 120px;
+}
+
+.Logotipo1 img {
+    height: 80px;
+    width: 250px;
+    margin-top: 20px;
+}
+
+.Encabezado {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+header .Logotipo1 {
+    float: left;
+}
+
+header nav {
+    line-height: 100px;
+    margin-top: -0px;
+    float: right;
+}
+
+header nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    line-height: normal;
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+header nav a:hover {
+    background: #42208C;
+    border-radius: 500px;
+}
